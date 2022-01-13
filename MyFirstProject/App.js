@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import listado from './src/container/listado';
-import HistoryScreen from './src/navigation/HistoryScreen';
+import historia from './src/container/historia';
 
 
 const Tab = createBottomTabNavigator();
@@ -31,7 +31,7 @@ export default function App() {
           tabBarInactiveTintColor: 'grey',
         })}
       >
-        <Tab.Screen name="Historia" component={HistoryScreen} options={{ headerStyle: { backgroundColor: '#625204' } }} />
+        <Tab.Screen name="Historia" component={historia} options={{ headerStyle: { backgroundColor: '#625204' } }} />
         <Tab.Screen name="Músicos" component={listado} options={{ headerShown: false }} />
 
       </Tab.Navigator>
